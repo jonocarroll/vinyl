@@ -29,7 +29,7 @@ class VinylDataService {
 
     this.loadingPromise = new Promise(async (resolve, reject) => {
       try {
-        const vinylsResponse = await fetch('/data/vinyl-collection.json');
+        const vinylsResponse = await fetch(`${process.env.PUBLIC_URL}/data/vinyl-collection.json`);
         if (!vinylsResponse.ok) {
           throw new Error(`HTTP error! status: ${vinylsResponse.status}`);
         }
