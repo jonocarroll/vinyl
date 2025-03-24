@@ -61,13 +61,17 @@ function App() {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'ArrowLeft') {
-        setSelectedVinylIndex(prevIndex => 
-          prevIndex > 0 ? prevIndex - 1 : vinylData.length - 1
-        );
+        setSelectedVinylIndex(prevIndex => {
+          const newIndex = prevIndex > 0 ? prevIndex - 1 : vinylData.length - 1;
+          // console.log(`ArrowLeft pressed. New index: ${newIndex}`);
+          return newIndex;
+        });
       } else if (event.key === 'ArrowRight') {
-        setSelectedVinylIndex(prevIndex => 
-          prevIndex < vinylData.length - 1 ? prevIndex + 1 : 0
-        );
+        setSelectedVinylIndex(prevIndex => {
+          const newIndex = prevIndex < vinylData.length - 1 ? prevIndex + 1 : 0;
+          // console.log(`ArrowRight pressed. New index: ${newIndex}`);
+          return newIndex;
+        });
       }
     };
 
