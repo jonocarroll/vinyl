@@ -1,0 +1,57 @@
+/* src/components/TrackList.css */
+.tracklist-container {
+    width: 40%;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vinyl-info {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .vinyl-info h2 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .vinyl-info h3 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    color: #555;
+  }
+  
+  .vinyl-info p {
+    margin: 0.3rem 0;
+    color: #777;
+  }
+  
+  .tracks h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .tracks ol {
+    padding-left: 1.5rem;
+  }
+  
+  .tracks li {
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .track-title {
+    font-weight: 500;
+  }
+  
+  .track-duration {
+    color: #888;
+    font-family: monospace;
+  }
