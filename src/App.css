@@ -67,18 +67,20 @@ main {
 .vinyl-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background: #333;
+  background: url('http://localhost:3000/default-cover.jpg') no-repeat center center;
+  background-size: cover;
   cursor: pointer;
 }
 
 .vinyl-slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background: #333;
+  background: url('http://localhost:3000/default-cover.jpg') no-repeat center center;
+  background-size: cover;
   cursor: pointer;
 }
 

@@ -28,7 +28,12 @@ function App() {
         
         // Check if we have valid data
         if (Array.isArray(data.vinyls) && data.vinyls.length > 0) {
-          setVinylData(data.vinyls);
+          // Ensure each vinyl object has a coverImageUrl property
+          const vinylsWithCoverImages = data.vinyls.map(vinyl => ({
+            ...vinyl,
+            coverImageUrl: vinyl.coverImageUrl || '/default-cover.jpg'
+          }));
+          setVinylData(vinylsWithCoverImages);
         } else {
           throw new Error('No vinyl data found or invalid data format');
         }
